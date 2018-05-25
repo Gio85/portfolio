@@ -345,6 +345,13 @@ body {
     font-size: 2rem;
     font-weight: 100; }
 
+.map {
+  height: 50vh; }
+
+.infowindow {
+  color: #021d68;
+  font-family: 'Aldrich', sans-serif; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(102, 172, 236, 0.5), rgba(25, 4, 69, 0.8)), url(../../img/img1.jpg);
