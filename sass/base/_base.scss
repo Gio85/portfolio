@@ -1,0 +1,21 @@
+/* to reset the page */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+/* **** */
+
+
+html {
+    // this defines what 1rem is
+    // in order to make the root font-size = to the 62.5% of 16px 
+    // which is the default font-size given by browser 
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}

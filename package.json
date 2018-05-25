@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
+  }
+}
