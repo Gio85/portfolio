@@ -6,7 +6,7 @@
 
 .section-skills {
     padding: 8rem 0 15rem 0;
-     background-image: linear-gradient(
+    background-image: linear-gradient(
         to right bottom,
         rgba($color-blue-dark, 0.8),
         rgba($color-primary-dark, 0.8) ),
@@ -27,18 +27,37 @@
     margin-top: -10rem;
 }
 .section-contact {
-    padding: 8rem 0 15rem 0;
+    padding: 8rem 0 8rem 0;
      background-image: linear-gradient(
         to right bottom,
         rgba($color-blue-dark, 0.8),
         rgba($color-primary-dark, 0.8) ),
         url(../../img/london.jpg);
     background-size: cover;
+    background-position: center;
     margin-top: -10rem;
-    
-    transform: skewY(-7deg);
 
-    & > * {
-        transform: skewY(7deg);
+    & .contact__text, a {
+        text-decoration-line: none;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        width: 100%;
+        color: $color-white;
+
+        & .contact__links {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+
+            & .contact__link {
+                margin-right: 2rem;
+
+                &:hover,
+                &:active {
+                    color: $color-white;
+                    box-shadow: 0 1rem 2rem rgba($color-white, .4);
+                }
+            }
+        }
     }
 }

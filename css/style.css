@@ -99,9 +99,12 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition-property: all .2s;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #66acec, #190445);
+  border-image-slice: 1; }
 
 .heading-tertiary {
+  letter-spacing: 0.5rem;
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
@@ -116,7 +119,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #66acec, #190445);
   -webkit-background-clip: text;
   color: #fff;
   border-bottom: 1px solid #fff; }
@@ -197,17 +199,10 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     position: absolute;
-    z-index: 10;
     transition: all .2s; }
     .composition__photo--p1 {
       left: 10rem;
       top: -4rem; }
-    .composition__photo--p2 {
-      right: 0;
-      top: 2rem; }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 10rem; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.95); }
 
@@ -346,7 +341,8 @@ body {
     font-weight: 100; }
 
 .map {
-  height: 50vh; }
+  height: 50vh;
+  border-radius: 5px; }
 
 .infowindow {
   color: #021d68;
@@ -403,6 +399,147 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + (2 * 6rem)); }
 
+.footer {
+  background-color: #190445;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  color: #fff; }
+  .footer__navigation {
+    border-top: 1px solid #fff;
+    padding-top: 2rem;
+    display: inline-block;
+    margin-right: 8rem; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 5.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #fff;
+    background-color: #190445;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.4);
+    transform: rotate(5deg) scale(1.3); }
+  .footer__copyright {
+    border-top: 1px solid #fff;
+    padding: 2rem;
+    float: right; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(25, 4, 69, 0.2);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#190445, #66acec);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 240%;
+  transition: all .4s; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #190445;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #190445;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
@@ -423,10 +560,23 @@ body {
   margin-top: -10rem; }
 
 .section-contact {
-  padding: 8rem 0 15rem 0;
+  padding: 8rem 0 8rem 0;
   background-image: linear-gradient(to right bottom, rgba(32, 80, 129, 0.8), rgba(25, 4, 69, 0.8)), url(../../img/london.jpg);
   background-size: cover;
-  margin-top: -10rem;
-  transform: skewY(-7deg); }
-  .section-contact > * {
-    transform: skewY(7deg); }
+  background-position: center;
+  margin-top: -10rem; }
+  .section-contact .contact__text, .section-contact a {
+    text-decoration-line: none;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    width: 100%;
+    color: #fff; }
+    .section-contact .contact__text .contact__links, .section-contact a .contact__links {
+      margin: 0 auto;
+      width: 50%;
+      text-align: center; }
+      .section-contact .contact__text .contact__links .contact__link, .section-contact a .contact__links .contact__link {
+        margin-right: 2rem; }
+        .section-contact .contact__text .contact__links .contact__link:hover, .section-contact .contact__text .contact__links .contact__link:active, .section-contact a .contact__links .contact__link:hover, .section-contact a .contact__links .contact__link:active {
+          color: #fff;
+          box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.4); }
