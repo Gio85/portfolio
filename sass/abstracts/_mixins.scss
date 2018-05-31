@@ -5,3 +5,26 @@
         clear: both;
     }
 }
+
+// 0 - 600px:           phone
+// 600 - 900px:         Tablet portrait
+// 900px - 1200px:      Tablet plandscape
+// 1800px +:            Big Desktop
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }; //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content };   //900px
+    }
+
+    @if $breakpoint == tab-scape {
+        @media (max-width: 75em) { @content };      //1200px
+    }
+    
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content };   //1800
+    }
+}
