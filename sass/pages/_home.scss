@@ -2,9 +2,13 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+    
+    @include respond(tab-scape) {
+        padding: 25rem 3rem 20rem 3rem;
+    }
 
     @include respond(tab-port) {
-        padding: 20rem 0 32rem 0;
+        padding-bottom: 40rem;
     }
 }
 

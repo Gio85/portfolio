@@ -15,6 +15,10 @@
       width: 100%;
       text-align: center;
     }
+    @include respond(tab-scape) {
+      margin-right: 0;
+      padding: 2rem 1rem;
+    }
 
   }
 
