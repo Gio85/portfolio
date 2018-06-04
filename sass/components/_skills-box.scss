@@ -13,10 +13,16 @@
     
     &__icon {
         font-size: 8rem;
-        // font-size: 6rem;
         margin-bottom: .5rem;
         display: inline-block;
         -webkit-background-clip: text;
+
+        @include respond(phone) {
+            font-size: 6rem;
+        }
+        @include respond(tab-port) {
+            font-size: 8rem;
+        }
     }
 
     &:hover {

@@ -10,6 +10,11 @@
     /* in order to put the effect on the btn-white  */
     position: relative;
     font-size: $default-font-size;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+      padding: 1rem 2rem;
+    }
   }
 
   &:hover {
