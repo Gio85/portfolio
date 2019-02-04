@@ -7,4 +7,4 @@ $(() => {
     $navToggle.prop('checked', false);
   });
   
-})
+});
