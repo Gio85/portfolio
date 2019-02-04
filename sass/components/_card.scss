@@ -41,6 +41,14 @@
       &-4{
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
       }
+      
+      &-tbc{
+        background-image: linear-gradient(to right bottom, $color-tbc-primary, $color-tbc-secondary);
+      }
+      
+      &-bmw{
+        background-image: linear-gradient(to right bottom, $color-bmw-primary, $color-bmw-secondary);
+      }
     }
   }
 
@@ -133,6 +141,18 @@
       rgba($color-tertiary-light, .85),
       rgba($color-tertiary-dark, .85));
     }
+    &--tbc{
+      background-image:
+      linear-gradient(to right bottom,
+      rgba($color-tbc-primary, .85),
+      rgba($color-tbc-secondary, .85));
+    }
+    &--bmw{
+      background-image:
+      linear-gradient(to right bottom,
+      rgba($color-bmw-primary, .85),
+      rgba($color-bmw-secondary, .85));
+    }
   }
 
   &__details {
@@ -159,6 +179,16 @@
       }
       &--4{
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &--tbc{
+        background-image: linear-gradient(to right bottom, $color-tbc-primary, $color-tbc-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &--bmw{
+        background-image: linear-gradient(to right bottom, $color-bmw-primary, $color-bmw-secondary);
         -webkit-background-clip: text;
         color: transparent;
       }

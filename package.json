@@ -1,7 +1,7 @@
 {
-  "name": "natours",
+  "name": "giovanni_galiero_s_website",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "portfolio",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
