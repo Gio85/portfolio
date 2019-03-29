@@ -1,0 +1,79 @@
+.experience {
+  width: 75%;
+  margin: 4rem auto;
+  box-shadow: 0 3rem 6rem rgba(black, .4);
+  background-color: white;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem) skew(12deg);
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    transform: skew(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    text-align: center;
+    opacity: 0;
+  }
+
+  @include respond(tab-port) {
+    width: 90%;
+    transform: none;
+    padding-left: none;
+    padding: 2rem;
+    &__shape {
+      float: none;
+      transform: none;
+      position: relative;
+      left: 25%;
+    }
+
+    &__text {
+      transform: none;
+    }
+  }
+
+  @include respond(phone) {
+    width: 90%;
+    transform: none;
+    padding-left: none;
+    padding: 2rem;
+    &__shape {
+      float: none;
+      transform: none;
+      position: relative;
+      left: 25%;
+    }
+
+    &__img {
+    width: 90%;
+  }
+
+    &__text {
+      transform: none;
+    }
+  }
+}
