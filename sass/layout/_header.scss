@@ -42,5 +42,9 @@
         /* to center the bottom */
         text-align: center;
         /* *** */
+
+        @include respond(phone) {
+            top: 50%;
+        }
     }
 }

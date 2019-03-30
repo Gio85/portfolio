@@ -8,7 +8,10 @@
     }
 
     @include respond(tab-port) {
-        padding-bottom: 40rem;
+        padding-bottom: 45rem;
+    }
+    @include respond(phone) {
+        padding-bottom: 15rem;
     }
 }
 
@@ -23,9 +26,25 @@
     margin-top: -10rem;
     transform: skewY(-7deg);
 
-    @include respond(tab-port) {
-        margin-top: -5rem;
+    & .row {
+        @include respond(phone) {
+            margin-bottom: 0;
+        }
+
     }
+    
+    & .skills-container {
+        width: 90%;
+        margin: 0 auto;
+        color: white;
+
+        & img {
+            width: 12rem;
+        }
+    }
+    // @include respond(tab-port) {
+    //     margin-top: -5rem;
+    // }
 
     & > * {
         transform: skewY(7deg);

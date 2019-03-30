@@ -7,28 +7,19 @@
     // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
 
-    & .white{
-        color: $color-white;
-    }
+   
     
     &__icon {
+        padding: 5rem;
         font-size: 8rem;
         margin-bottom: .5rem;
         display: inline-block;
         -webkit-background-clip: text;
 
         @include respond(phone) {
-            font-size: 6rem;
-        }
-        @include respond(tab-port) {
-            font-size: 8rem;
+            padding: 2rem;
         }
     }
-
-    & img{
-        margin-top: 2rem;
-    }
-
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
     }

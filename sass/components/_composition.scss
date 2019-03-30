@@ -9,11 +9,15 @@
         position: absolute;
         transition: all .2s;
         left: 10rem;
-        top: -3.8rem;
+        top: 0.8rem;
 
         @include respond(tab-port) {
-            width: 50%;
-            left: 12rem;
+            width: 40%;
+            left: 13rem;
+            
+        }
+        @include respond(phone) {
+           display: none;
         }
     }
 
