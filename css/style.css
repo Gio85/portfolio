@@ -908,6 +908,8 @@ body {
     color: white; }
     .section-skills .skills-container img {
       width: 12rem; }
+    .section-skills .skills-container .npm_img {
+      width: 8rem; }
   .section-skills > * {
     transform: skewY(7deg); }
 

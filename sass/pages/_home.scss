@@ -41,6 +41,10 @@
         & img {
             width: 12rem;
         }
+
+        & .npm_img {
+            width: 8rem;
+        }
     }
     // @include respond(tab-port) {
     //     margin-top: -5rem;
