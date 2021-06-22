@@ -5,8 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "commit": "cz"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "dependencies": {
     "live-server": "^1.2.1",
