@@ -49,6 +49,15 @@
       &-bmw{
         background-image: linear-gradient(to right bottom, $color-bmw-primary, $color-bmw-secondary);
       }
+
+      &-swapisdk{
+        background-image: linear-gradient(to right bottom, $color-swapi-light, $color-swapi-dark);
+      }
+
+      &-spacex{
+        background-image: linear-gradient(to right bottom, $color-blue-dark, $color-green-dark);
+      }
+      
     }
   }
 
@@ -97,6 +106,16 @@
       background-image: 
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/voxly-projects/BMW-alexa.jpeg);
+    }
+    &--spacex{
+      background-image: 
+      // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+      url(../assets/img/spaceX.jpg);
+    }
+    &--swapisdk{
+      background-image: 
+      // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+      url(../assets/img/swapisdk.png);
     }
   }
 
@@ -153,6 +172,19 @@
       rgba($color-bmw-primary, .85),
       rgba($color-bmw-secondary, .85));
     }
+    &--swapisdk{
+      background-image:
+      linear-gradient(to right bottom,
+      rgba($color-swapi-light, .85),
+      rgba($color-swapi-dark, .85));
+    }
+    &--spacex{
+      background-image:
+      linear-gradient(to right bottom,
+      rgba($color-blue-dark, .85),
+      rgba($color-green-dark, .85));
+    }
+
   }
 
   &__details {
@@ -189,6 +221,16 @@
       }
       &--bmw{
         background-image: linear-gradient(to right bottom, $color-bmw-primary, $color-bmw-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &--swapisdk{
+        background-image: linear-gradient(to right bottom, $color-swapi-light, $color-swapi-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &--spacex{
+        background-image: linear-gradient(to right bottom, $color-blue-dark, $color-green-dark);
         -webkit-background-clip: text;
         color: transparent;
       }
