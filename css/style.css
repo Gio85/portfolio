@@ -157,6 +157,10 @@ body {
   color: #fff;
   border-bottom: 1px solid #fff; }
 
+.card__link:link, .card__link:visited {
+  text-decoration: none;
+  color: #ca5502; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -413,6 +417,8 @@ body {
         background-image: linear-gradient(to right bottom, #ffb900, #070603); }
       .card__side--back-spacex {
         background-image: linear-gradient(to right bottom, #205081, #28b485); }
+      .card__side--back-calc {
+        background-image: linear-gradient(to right bottom, #637097, #d1cccc); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -439,6 +445,8 @@ body {
       background-image: url(../assets/img/spaceX.jpg); }
     .card__picture--swapisdk {
       background-image: url(../assets/img/swapisdk.png); }
+    .card__picture--calc {
+      background-image: url(../assets/img/calc.png); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -469,6 +477,8 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(7, 6, 3, 0.85)); }
     .card__heading-span--spacex {
       background-image: linear-gradient(to right bottom, rgba(32, 80, 129, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--calc {
+      background-image: linear-gradient(to right bottom, rgba(202, 85, 2, 0.85), rgba(209, 204, 204, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details .work-tertiary {
@@ -506,6 +516,10 @@ body {
         color: transparent; }
       .card__details .work-tertiary--spacex {
         background-image: linear-gradient(to right bottom, #205081, #28b485);
+        -webkit-background-clip: text;
+        color: transparent; }
+      .card__details .work-tertiary--calc {
+        background-image: linear-gradient(to right bottom, #ca5502, #d1cccc);
         -webkit-background-clip: text;
         color: transparent; }
     .card__details ul {

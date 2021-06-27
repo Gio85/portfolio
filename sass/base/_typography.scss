@@ -97,3 +97,13 @@ body {
     color: $color-white;
     border-bottom: 1px solid $color-white;
 }
+
+.card__link {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-calculator-tertiary;
+    }
+
+
+}
