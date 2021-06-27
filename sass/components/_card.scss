@@ -57,6 +57,10 @@
       &-spacex{
         background-image: linear-gradient(to right bottom, $color-blue-dark, $color-green-dark);
       }
+
+      &-calc{
+        background-image: linear-gradient(to right bottom, $color-calculator-primary, $color-calculator-secondary);
+      }
       
     }
   }
@@ -116,6 +120,11 @@
       background-image: 
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/swapisdk.png);
+    }
+    &--calc{
+      background-image:
+      // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+      url(../assets/img/calc.png);
     }
   }
 
@@ -184,6 +193,12 @@
       rgba($color-blue-dark, .85),
       rgba($color-green-dark, .85));
     }
+    &--calc{
+      background-image:
+      linear-gradient(to right bottom,
+      rgba($color-calculator-tertiary, .85),
+      rgba($color-calculator-secondary, .85));
+    }
 
   }
 
@@ -231,6 +246,11 @@
       }
       &--spacex{
         background-image: linear-gradient(to right bottom, $color-blue-dark, $color-green-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      &--calc{
+        background-image: linear-gradient(to right bottom, $color-calculator-tertiary, $color-calculator-secondary);
         -webkit-background-clip: text;
         color: transparent;
       }
