@@ -37,15 +37,15 @@
       &-3{
         background-image: linear-gradient(to right bottom, $color-beige-light, $color-beige-dark);
       }
-      
+
       &-4{
         background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
       }
-      
+
       &-tbc{
         background-image: linear-gradient(to right bottom, $color-tbc-primary, $color-tbc-secondary);
       }
-      
+
       &-bmw{
         background-image: linear-gradient(to right bottom, $color-bmw-primary, $color-bmw-secondary);
       }
@@ -61,7 +61,7 @@
       &-calc{
         background-image: linear-gradient(to right bottom, $color-calculator-primary, $color-calculator-secondary);
       }
-      
+
     }
   }
 
@@ -97,27 +97,27 @@
       url(../assets/img/project-3/project-3-1.png);
     }
     &--4{
-      background-image: 
+      background-image:
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/project-4/project-4-1.png);
     }
     &--tbc{
-      background-image: 
+      background-image:
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/voxly-projects/TheBodyCoach.jpg);
     }
     &--bmw{
-      background-image: 
+      background-image:
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/voxly-projects/BMW-alexa.jpeg);
     }
     &--spacex{
-      background-image: 
+      background-image:
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/spaceX.jpg);
     }
     &--swapisdk{
-      background-image: 
+      background-image:
       // linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
       url(../assets/img/swapisdk.png);
     }
@@ -254,7 +254,7 @@
         -webkit-background-clip: text;
         color: transparent;
       }
-      
+
     }
     ul {
       list-style: none;
