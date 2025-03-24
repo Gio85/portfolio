@@ -8,10 +8,10 @@
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "dependencies": {
-    "live-server": "^1.2.1",
-    "node-sass": "^6.0.0"
+    "live-server": "^1.2.2",
+    "node-sass": "8.0.0"
   },
   "devDependencies": {
-    "tar": "^6.1.0"
+    "tar": "7.4.3"
   }
 }
