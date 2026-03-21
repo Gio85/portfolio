@@ -163,7 +163,6 @@ body {
 /* ===== SECTIONS ===== */
 .section {
   padding: 5rem 2rem;
-  border-top: 1px solid var(--border);
 }
 
 .container {
