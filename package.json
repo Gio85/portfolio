@@ -1,17 +1,9 @@
 {
-  "name": "giovanni_galiero_s_website",
-  "version": "1.0.0",
-  "description": "portfolio",
-  "main": "index.js",
+  "name": "giovanni-galiero-portfolio",
+  "version": "3.0.0",
+  "description": "Personal portfolio — Giovanni Galiero, Senior Software Engineer",
   "license": "MIT",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
-  "dependencies": {
-    "live-server": "^1.2.2",
-    "node-sass": "8.0.0"
-  },
-  "devDependencies": {
-    "tar": "7.4.3"
+    "start": "npx serve ."
   }
 }

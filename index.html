@@ -3,550 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="css/icon-font.css">
+  <meta name="description" content="Giovanni Galiero — Senior Software Engineer based in the UK, specialising in TypeScript, Node.js, React, and cloud infrastructure.">
+  <meta property="og:title" content="Giovanni Galiero | Senior Software Engineer">
+  <meta property="og:description" content="Senior Software Engineer based in the UK, specialising in TypeScript, Node.js, React, and cloud infrastructure.">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="./assets/img/icon-blue.png">
   <title>Giovanni Galiero | Senior Software Engineer</title>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
-    </label>
-    <div class="navigation__background">&nbsp:</div>
 
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
-        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
-        <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
-        <li class="navigation__item"><a href="#experiences" class="navigation__link">Experience</a></li>
-        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">gg.dev</a>
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experiences" class="nav__link">Experience</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
-    </nav>
-  </div>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header__logo-box">
-      <img class="header__logo" src="./assets/img/icon.png" alt="Logo">
     </div>
-    <div class="header__text-box">
-      <h1 class="heading-primary">
-        <span class="heading-primary--main">Giovanni Galiero</span>
-        <span class="heading-primary--sub">Senior Software Engineer</span>
-      </h1>
-      <a href="#contact" class="btn btn--white btn--animated">Get in touch</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__container">
+      <p class="hero__label">Hello, World!</p>
+      <h1 class="hero__name">Giovanni Galiero</h1>
+      <p class="hero__title">Senior Software Engineer</p>
+      <p class="hero__location">&#128205; United Kingdom</p>
+      <a href="#contact" class="btn">Get in touch</a>
     </div>
   </header>
+
   <main>
+
     <!-- ABOUT -->
-    <section class="section-about" id="about">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">About me</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary u-margin-bottom-small">Ciao!..</h3>
-          <p class="paragraph">
-            My name is Giovanni and I am a Senior Software Engineer based in UK.
-          </p>
-          <p class="paragraph">
-            I love coding in all of its shapes. In my free time, I have fun playing with new JavaScript frameworks and libraries.
-            I always try to keep my skills up to date by checking what's new out there.
-          </p>
-          <p class="paragraph">
-             When I am not coding, I am probably bored.
-          </p>
-        </div>
-        <div class="col-1-of-2">
-          <div class="composition">
-            <img src="./assets/img/manga.jpeg" alt="Photo 1" class="composition__photo">
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__heading">About me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p class="paragraph">My name is Giovanni and I am a Senior Software Engineer based in the UK.</p>
+            <p class="paragraph">I love coding in all of its shapes. In my free time, I have fun playing with new JavaScript frameworks and libraries. I always try to keep my skills up to date by checking what's new out there.</p>
+            <p class="paragraph">When I am not coding, I am probably bored.</p>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- SKILLS -->
-    <section class="section-skills" id="skills">
-      <div class="u-center-text u-margin-bottom-medium">
-        <h2 class="skills-primary">Experience with</h2>
-      </div>
-      <div class="skills-container">
-        <i class="skills-box__icon devicon-html5-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-css3-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-javascript-plain colored"></i>
-        <i class="skills-box__icon devicon-typescript-plain colored"></i>
-        <i class="skills-box__icon devicon-nodejs-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-nestjs-plain-wordmark"></i>
-        <i class="skills-box__icon devicon-express-original white"></i>
-        <i class="skills-box__icon devicon-docker-plain-wordmark white"></i>
-        <i class="skills-box__icon devicon-kubernetes-plain"></i>
-        <i class="skills-box__icon devicon-jenkins-plain white"></i>
-        <i class="skills-box__icon devicon-googlecloud-plain-wordmark"></i>
-        <i class="skills-box__icon devicon-amazonwebservices-plain-wordmark white"></i>
-        <i class="skills-box__icon devicon-mongodb-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-jquery-plain-wordmark white"></i>
-        <i class="skills-box__icon devicon-react-original-wordmark colored"></i>
-        <i class="skills-box__icon devicon-sass-original colored"></i>
-        <i class="skills-box__icon devicon-jest-plain white"></i>
-        <i class="skills-box__icon devicon-mocha-plain"></i>
-        <i class="skills-box__icon devicon-materialui-plain"></i>
-        <i class="skills-box__icon devicon-webstorm-plain white"></i>
-        <i class="skills-box__icon devicon-vscode-plain white"></i>
-        <i class="skills-box__icon devicon-git-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-github-plain-wordmark white"></i>
-        <i class="skills-box__icon devicon-slack-plain"></i>
-        <i class="skills-box__icon devicon-trello-plain"></i>
-        <i class="skills-box__icon devicon-graphql-plain-wordmark colored"></i>
-        <i class="skills-box__icon devicon-grafana-plain-wordmark"></i>
-        <i class="skills-box__icon devicon-jira-plain-wordmark"></i>
-
-
-      </div>
-    </section>
-    <!-- MY WORK -->
-    <section class="section-projects" id="projects">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Projects</h2>
-      </div>
-
-      <div class="row">
-        <!-- Vue Calc -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--calc">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--calc">Vue Calc</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--calc">Tech</h3>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>NodeJS</li>
-                  <li>Vue3</li>
-                  <li>CSS3</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-calc">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">Vue Calc</p>
-                  <p class="card__about-description">This is one of the
-                    <a class="card__link" href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29" target="_blank">
-                      Frontend Mentor </a>challenges</p>
-                  <p class="card__about-description">The aim of this challenge was to build a calculator using JS and CSS.</p>
-                </div>
-                <a href="https://github.com/Gio85/vue_calculator" class="btn btn--white"
-                   target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SpaceX -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--spacex">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--spacex">SpaceX</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--spacex">Tech</h3>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>NodeJS</li>
-                  <li>ReactJS</li>
-                  <li>VueJS</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-spacex">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">SpaceX</p>
-                  <p class="card__about-description">This is a side project based on the SpaceX API.</p>
-                  <p class="card__about-description">The purpose of these projects was to try Vue and see the difference with React</p>
-                </div>
-                <a href="https://gio85.github.io/space_x_vue/#/" class="btn btn--white bmw"
-                  target="_blank">Project with Vue</a>
-                <a href="https://gio85.github.io/space_x_react/#/" class="btn btn--white bmw"
-                  target="_blank">Project with React</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- SWAPI_TS -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--swapisdk">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--swapisdk">SWAPI SDK</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--swapisdk">Tech</h3>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>NodeJS</li>
-                  <li>Jest</li>
-                  <li>Semantic-Release</li>
-                  <li>npm</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-swapisdk">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">SWAPI SDK</p>
-                  <p class="card__about-description">This is a side project based on SWAPI</p>
-                  <p class="card__about-description">In here what I wanted to do was to creare a wrapper around the SWAPI API</p>
-                </div>
-                <a href="https://www.npmjs.com/package/swapi-ts-sdk" class="btn btn--white"
-                  target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <!-- BMW - VOXLY  -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--bmw">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--bmw">BMW 3 Series</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--bmw">Tech</h3>
-                <ul>
-                  <li>JovoJS</li>
-                  <li>NodeJS</li>
-                  <li>ServerlessJS</li>
-                  <li>AWS</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-bmw">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">BMW 3 series</p>
-                  <p class="card__about-description">This is a Voice App for BMW to allow the users to hear all about the new 3
-                    Series. It is available for Amazon Alexa and Google Action.</p>
-                  <p class="card__about-description">This project is done by Voxly Digital.</p>
-                </div>
-                <a href="https://www.amazon.co.uk/BMW-UK-3-Series-Experience/dp/B07L72PV5L" class="btn btn--white bmw"
-                   target="_blank">Project on Alexa</a>
-                <a href="https://assistant.google.com/services/a/uid/000000f195463fee" class="btn btn--white bmw"
-                   target="_blank">Project on Google</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- THE BODY COACH - VOXLY -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--tbc">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--tbc">The Body Coach</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--tbc">Tech</h3>
-                <ul>
-                  <li>JovoJS</li>
-                  <li>NodeJS</li>
-                  <li>ServerlessJS</li>
-                  <li>AWS</li>
-                  <li>Alexa Presentation Language</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-tbc">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">The Body Coach</p>
-                  <p class="card__about-description">This is a Voice App for Joe Wicks, The Body Coach. This app is available on
-                    Amazon Alexa and contains 7 x 15-minute, full-body HIIT workouts that help the user to get fit and burn fat.
-                  </p>
-                  <p class="card__about-description">This project is done by Voxly Digital.</p>
-                </div>
-                <a href="https://www.amazon.co.uk/Joe-Wicks-The-Body-Coach/dp/B07KSJ6WD7" class="btn btn--white"
-                   target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- GIO LOCATION -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--4">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--4">Gio-Locations</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--4">Tech</h3>
-                <ul>
-                  <li>ReactJS</li>
-                  <li>NodeJS</li>
-                  <li>ExpressJS</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-4">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">WDI Project 4</p>
-                  <p class="card__about-description">A MERN stack RESTful app for blogging and reviewing trips, with photo uploads, messaging, and geolocation. Features include Facebook oAuth, Google Maps, and a built-in messaging system using Bootstrap.</p>
-                </div>
-                <a href="https://github.com/Gio85/WDI-project4" class="btn btn--white" target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row">
-        <!-- LOST AND FOUND PETS -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--3">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3">Lost & Found Pets</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--3">Tech</h3>
-                <ul>
-                  <li>AngularJS</li>
-                  <li>NodeJS</li>
-                  <li>ExpressJS</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-3">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">WDI Project 3</p>
-                  <p class="card__about-description">This is my first GA team-project. It is a MEAN stack RESTful app to locate
-                    and found lost pets, built with Bulma, a lightweight CSS framework that uses a similar
-                    grid layout to Bootstrap.</p>
-                </div>
-                <a href="https://github.com/Gio85/WDI-project3" class="btn btn--white" target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- MOVIES -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">My Movies</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--2">Tech</h3>
-                <ul>
-                  <li>NodeJS</li>
-                  <li>ExpressJS</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose</li>
-                  <li>EJS</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-2">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">WDI Project 2</p>
-                  <p class="card__about-description">My Movies is my second GA self-initiated project. It is a full-stack
-                    RESTful app with authentication and CRUD actions using EJS and Bulma.</p>
-                </div>
-                <a href="https://github.com/Gio85/WDI-project2" class="btn btn--white" target="_blank">View the project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- MARIO -->
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">
-                &nbsp;
-              </div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--1">Mario Hero</span>
-              </h4>
-              <div class="card__details">
-                <h3 class="work-tertiary work-tertiary--1">Tech</h3>
-                <ul>
-                  <li>Html5</li>
-                  <li>CSS3</li>
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>Gulp</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-1">
-              <div class="card__cta">
-                <div class="card__about-box">
-                  <p class="card__about-title">WDI Project 1</p>
-                  <p class="card__about-description">Mario Hero is my first GA self-initiated project. It is an individual
-                    JavaScript app testing game-play logic and based on
-                    Super Mario where I kept the JavaScript logic as basic as possible.</p>
-<!--                  <p class="card__about-description">As well as jQuery and CSS animation techniques, I learned-->
-<!--                    about web font handling and layout, as well as adding sound to websites.</p>-->
-                </div>
-                <a href="https://github.com/Gio85/WDI-project1" class="btn btn--white" target="_blank">View the project</a>
-              </div>
-            </div>
+          <div class="about__image">
+            <img src="./assets/img/manga.jpeg" alt="Giovanni Galiero" class="about__photo">
           </div>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section-experiences" id="experiences">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Experience</h2>
-      </div>
-      <div class="row">
-        <!-- HOLIDAY EXTRAS -->
-        <div class="experience">
-          <figure class="experience__shape">
-            <img class="experience__img" src="./assets/img/holidayextras.png" alt="holidayextras">
-          </figure>
-          <div class="experience__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">Senior Software Engineer</h3>
-            <h3 class="heading-tertiary u-margin-bottom-small">Holidays Extras</h3>
-            <p>Holiday Extras has over 40 years' experience of providing ancillary travel services, including airport parking, airport hotels, airport lounges, airport transfers, car hire, holiday insurance and UK breaks. Combining innovative technology with award-winning customer service, Holiday Extras' expert team helps over 8 million travellers every year with their travel needs.</p>
-          </div>
-        </div>
+    <section class="section" id="experiences">
+      <div class="container">
+        <h2 class="section__heading">Experience</h2>
+        <div class="experience-list">
 
-        <!-- AI MUSIC -->
-        <div class="experience">
-          <figure class="experience__shape">
-            <img class="experience__img" src="./assets/img/AIMusic_logo.jpg" alt="aimusic">
-          </figure>
-          <div class="experience__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">Full-stack Developer</h3>
-            <h3 class="heading-tertiary u-margin-bottom-small">AI Music</h3>
-            <p>AI Music is a start-up company that is trying to be the leader behind innovative AI technology that empowers and harnesses the dynamism behind music and audio.
-              As part of the development team, I developing new platform features with a focus on back-end side being in charge of building and maintaining our API,
-              and sometimes also working on the frontend implementing new features and refactoring tasks.
-              I work in an agile team with daily stand-ups, strong testing, and code review practices in place.
-              Technologies we use are TypeScript, React.js, Node.js, NestJs, MongoDB, Kubernetes, Docker, Terraform, and GCP.
-              We have been also working with Hapi and AWS before switching to NestJs and GCP.
-            </p>
-          </div>
-        </div>
-        <!-- VOXLY DIGITAL -->
-        <div class="experience">
-          <figure class="experience__shape">
-            <img class="experience__img" src="./assets/img/VoxlyDigital_logo.png" alt="voxlydigital">
-          </figure>
-          <div class="experience__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">Backend Developer</h3>
-            <h4 class="heading-tertiary u-margin-bottom-small">Voxly Digital</h4>
-            <p> Voxly Digital is a digital agency specialising in the production of voice applications for Amazon Alexa and Google
-            Assistant.</p>
-            <p>My role was focused primarily on programming, with some additional project management responsibilities. I was
-            involved in projects from the design stage, through development and deployment. Day to day I work in Node.js with the
-            Jovo (dual platform voice) Framework and deploy applications to AWS with Serverless.</p>
-          </div>
-        </div>
-        <!-- GENERAL ASSEMBLY - TA WDI-->
-        <div class="experience">
-          <figure class="experience__shape">
-            <img class="experience__img" src="./assets/img/GA_logo.jpg" alt="general assembly">
-          </figure>
-          <div class="experience__text">
-            <h3 class="heading-tertiary u-margin-bottom-small">Web Developer Teaching Assistant</h3>
-            <h4 class="heading-tertiary u-margin-bottom-small">General Assembly</h4>
-            <p> Following my graduation, at General Assembly I was chosen to become part of the Instructional Team, first on the
-            Front-End Web Development part-time course and then on the Web Development Immersive course in London. Having enjoyed
-            the learning experience so much, this was a fantastic way to cement my knowledge, and pass on my experience to new students.
-            As well as assisting students in class and assessing homework submissions, the role also involved running labs, code-along and reviews.</p>
-            </div>
-        </div>
-      </div>
-    </section>
-    <!-- CONTACT -->
-    <section class="section-contact" id="contact">
-      <div class="u-center-text u-margin-bottom-medium">
-        <h2 class="skills-primary">Get in touch</h2>
-      </div>
-      <div class="row">
-          <div class="contact__text">
-            <p class="paragraph">Whether you would like my services for a project, get extra information on any of my work, ask me about this site or just
-              say hello then I would love to hear from you.</p>
-              <div class="contact__links">
-                <a class="contact__link" href="https://github.com/Gio85" target="_blank"><i class="fab fa-github-square"></i> github</a>
-                <a class="contact__link" href="https://www.linkedin.com/in/giovanni-galiero/" target="_blank"><i class="fab fa-linkedin"></i> linkedin</a>
-                <a class="contact__link" href="https://medium.com/@gg-dev" target="_blank"><i class="fab fa-medium"></i> medium</a>
-                <a class="contact__link" href="https://x.com/GG_Dev10" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> X</a>
+          <!-- HOLIDAY EXTRAS -->
+          <div class="exp-card">
+            <div class="exp-card__header">
+              <img class="exp-card__logo" src="./assets/img/holidayextras.png" alt="Holiday Extras">
+              <div>
+                <h3 class="exp-card__role">Senior Software Engineer</h3>
+                <p class="exp-card__company">Holiday Extras</p>
               </div>
+            </div>
+            <p class="exp-card__desc">Holiday Extras has over 40 years' experience providing ancillary travel services — airport parking, hotels, lounges, transfers, car hire, and more. Combining innovative technology with award-winning customer service, they help over 8 million travellers every year.</p>
           </div>
+
+          <!-- AI MUSIC -->
+          <div class="exp-card">
+            <div class="exp-card__header">
+              <img class="exp-card__logo" src="./assets/img/AIMusic_logo.jpg" alt="AI Music">
+              <div>
+                <h3 class="exp-card__role">Full-stack Developer</h3>
+                <p class="exp-card__company">AI Music</p>
+              </div>
+            </div>
+            <p class="exp-card__desc">AI Music is a start-up harnessing innovative AI technology in the music and audio space. I developed platform features with a focus on the back-end, building and maintaining our API, while also contributing to the frontend. Stack: TypeScript, React, Node.js, NestJS, MongoDB, Kubernetes, Docker, Terraform, GCP.</p>
+          </div>
+
+          <!-- VOXLY DIGITAL -->
+          <div class="exp-card">
+            <div class="exp-card__header">
+              <img class="exp-card__logo" src="./assets/img/VoxlyDigital_logo.png" alt="Voxly Digital">
+              <div>
+                <h3 class="exp-card__role">Backend Developer</h3>
+                <p class="exp-card__company">Voxly Digital</p>
+              </div>
+            </div>
+            <p class="exp-card__desc">Voxly Digital specialises in voice applications for Amazon Alexa and Google Assistant. I was involved in projects from design through deployment, working with Node.js, the Jovo framework, AWS, and Serverless.</p>
+          </div>
+
+          <!-- GENERAL ASSEMBLY -->
+          <div class="exp-card">
+            <div class="exp-card__header">
+              <img class="exp-card__logo" src="./assets/img/GA_logo.jpg" alt="General Assembly">
+              <div>
+                <h3 class="exp-card__role">Web Developer Teaching Assistant</h3>
+                <p class="exp-card__company">General Assembly</p>
+              </div>
+            </div>
+            <p class="exp-card__desc">Chosen to join the Instructional Team following graduation, first on the Front-End Web Development course and then on the Web Development Immersive in London. Assisted students, assessed homework, and ran labs, code-alongs, and reviews.</p>
+          </div>
+
+        </div>
       </div>
     </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section__heading">Get in touch</h2>
+        <p class="paragraph">Whether you'd like my services for a project, have questions about my work, or just want to say hello &mdash; I'd love to hear from you.</p>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:[YOUR_EMAIL]"><i class="fas fa-envelope"></i> email</a>
+          <a class="contact__link" href="https://github.com/Gio85" target="_blank"><i class="fab fa-github-square"></i> github</a>
+          <a class="contact__link" href="https://www.linkedin.com/in/giovanni-galiero/" target="_blank"><i class="fab fa-linkedin"></i> linkedin</a>
+          <a class="contact__link" href="https://medium.com/@gg-dev" target="_blank"><i class="fab fa-medium"></i> medium</a>
+          <a class="contact__link" href="https://x.com/GG_Dev10" target="_blank"><i class="fa-brands fa-square-x-twitter"></i> X</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="row">
-      <div class="col-1of-2">
-        <div class="footer__navigation">
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#about" class="footer__link">About Me</a></li>
-            <li class="footer__item"><a href="#skills" class="footer__link">Skills</a></li>
-            <li class="footer__item"><a href="#projects" class="footer__link">Projects</a></li>
-            <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
-
-
-          </ul>
-        </div>
-      </div>
-      <div class="col-1of-2">
-        <p class="footer__copyright">
-          Build by Giovanni Galiero. Copyright &copy; by Giovanni Galiero.
-        </p>
-      </div>
+    <div class="container">
+      <p>Built by Giovanni Galiero. Copyright &copy; Giovanni Galiero.</p>
     </div>
   </footer>
 
   <script defer src="https://use.fontawesome.com/releases/v6.4.2/js/all.js"></script>
-  <script src="js/jquery.js"></script>
   <script src="js/app.js"></script>
 
 </body>
